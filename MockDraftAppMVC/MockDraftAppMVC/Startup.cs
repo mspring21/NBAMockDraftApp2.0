@@ -32,15 +32,10 @@ namespace MockDraftAppMVC
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            // Not working try and fix later
-        
-            //string connectionString = Configuration.GetConnectionString("Default");
-            //services.AddTransient<IProspectsDAO, ProspectsSqlDAO>(d => new ProspectsSqlDAO(connectionString));
-
-
+            string connectionString = Configuration.GetConnectionString("Default");
+            services.AddTransient<IProspectsDAO>(m => new ProspectsSqlDAO(connectionString));
 
         }
 

@@ -1,11 +1,13 @@
-﻿using System;
+﻿using MockDraftAppMVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MockDraftAppMVC.DAL
 {
-    interface IProspectsDAO
+    public interface IProspectsDAO
     {
+        List<Prospect> GetProspect();
     }
 }

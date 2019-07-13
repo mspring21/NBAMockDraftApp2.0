@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSpring\\Desktop\\Side Project\\NbaMockDraftApp\\MockDraftAppMVC\\MockDraftAppMVC\\MockDraftAppMVC.csproj",
+      "projectUniqueName": "C:\\Users\\MSpring\\Desktop\\NBAappMVC\\NBAMockDraftApp2.0\\MockDraftAppMVC\\MockDraftAppMVC\\MockDraftAppMVC.csproj",
       "projectName": "MockDraftAppMVC",
-      "projectPath": "C:\\Users\\MSpring\\Desktop\\Side Project\\NbaMockDraftApp\\MockDraftAppMVC\\MockDraftAppMVC\\MockDraftAppMVC.csproj",
+      "projectPath": "C:\\Users\\MSpring\\Desktop\\NBAappMVC\\NBAMockDraftApp2.0\\MockDraftAppMVC\\MockDraftAppMVC\\MockDraftAppMVC.csproj",
       "packagesPath": "C:\\Users\\MSpring\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSpring\\Desktop\\Side Project\\NbaMockDraftApp\\MockDraftAppMVC\\MockDraftAppMVC\\obj\\",
+      "outputPath": "C:\\Users\\MSpring\\Desktop\\NBAappMVC\\NBAMockDraftApp2.0\\MockDraftAppMVC\\MockDraftAppMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
