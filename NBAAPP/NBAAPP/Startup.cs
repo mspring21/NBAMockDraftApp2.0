@@ -37,6 +37,7 @@ namespace NBAAPP
 
             string connectionString = Configuration.GetConnectionString("Default");
             services.AddTransient<IProspectsDAO>(m => new ProspectsSqlDAO(connectionString));
+            services.AddTransient<ITeamDAO>(m => new TeamSqlDAO(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

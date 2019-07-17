@@ -11,11 +11,12 @@ namespace NBAAPP.Controllers
 {
     public class HomeController : Controller
     {
-
+        private ITeamDAO teamDAO;
         private IProspectsDAO prospectDAO;
-        public HomeController(IProspectsDAO prospectDAO)
+        public HomeController(IProspectsDAO prospectDAO, ITeamDAO teamDAO)
         {
             this.prospectDAO = prospectDAO;
+            this.teamDAO = teamDAO;
         }
 
         public IActionResult Index()
@@ -30,10 +31,22 @@ namespace NBAAPP.Controllers
         }
 
 
+        public IActionResult ShowDraftOrder()
+        {
+            IList<Team> teams = teamDAO.GetDraftOrder();
+            return View(teams);
+        }
 
 
+        public IActionResult StartMockDraft()
+        {
+            return View();
+        }
 
-
+        public IActionResult DraftResults()
+        {
+            return View();
+        }
 
 
 

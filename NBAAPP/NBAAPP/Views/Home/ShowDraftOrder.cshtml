@@ -1,0 +1,24 @@
+﻿@model IList<Team>
+@{
+    ViewData["Title"] = "ShowDraftOrder";
+}
+
+<h1>Draft Lottery Results</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Team Name</th>
+            <th>Team Needs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Team t in Model)
+        {
+            <tr>
+                <td>@t.TeamName</td>
+                <td>@t.TeamNeeds</td>
+            </tr>
+        }
+    </tbody>
+</table>
