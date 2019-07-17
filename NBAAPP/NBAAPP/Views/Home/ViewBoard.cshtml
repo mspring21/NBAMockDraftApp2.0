@@ -1,0 +1,42 @@
+﻿@model IList<Prospect>
+@{
+    ViewData["Title"] = "ViewBoard";
+}
+
+<h2>ViewBoard</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Position</th>
+            <th>School</th>
+            <th>Points</th>
+            <th>Rebounds</th>
+            <th>Assists</th>
+            <th>Blocks</th>
+            <th>Steals</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    @foreach (Prospect p in Model)
+    {
+        <tr>
+            <td>@p.ProspectName</td>
+            <td>@p.Age</td>
+            <td>@p.Height</td>
+            <td>@p.Weight</td>
+            <td>@p.Position</td>
+            <td>@p.School</td>
+            <td>@p.Points</td>
+            <td>@p.Rebounds</td>
+            <td>@p.Assists</td>
+            <td>@p.Blocks</td>
+            <td>@p.Steals</td>
+            <td>@p.Rating</td>
+        </tr>
+    }
+</table>
