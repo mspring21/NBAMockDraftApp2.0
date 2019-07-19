@@ -37,7 +37,7 @@ body {
 }
 
 
-.container {
+div.container {
     display: grid;
     grid-template-columns: 25px 1fr 1fr 25px;
     grid-template-areas: ". pic1 pic2 ."
@@ -45,26 +45,26 @@ body {
     grid-gap: 15px;
 }
 
-.grid-item {
-    grid-area: pic1;
+.grid-item1 {
+    /*grid-area: pic1;*/
     height: 250px;
     width: 450px;
 }
 
-.grid-item {
-    grid-area: pic2;
+.grid-item2 {
+    /*grid-area: pic2;*/
     height: 250px;
     width: 450px;
 }
 
-.grid-item {
-    grid-area: pic3;
+.grid-item3 {
+    /*grid-area: pic3;*/
     height: 250px;
     width: 450px;
 }
 
-.grid-item {
-    grid-area: pic4;
+.grid-item4 {
+    /*grid-area: pic4;*/
     height: 250px;
     width: 450px;
 }
