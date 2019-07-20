@@ -8,6 +8,7 @@
 <table class="table table-striped">
     <thead>
         <tr>
+            <th></th>
             <th>Team Name</th>
             <th>Team Needs</th>
         </tr>
@@ -16,6 +17,7 @@
         @foreach(Team t in Model)
         {
             <tr>
+                <td><img class="TeamLogo" src="~/images/@(t.TeamPicture).png" /></td>
                 <td>@t.TeamName</td>
                 <td>@t.TeamNeeds</td>
             </tr>

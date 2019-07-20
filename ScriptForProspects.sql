@@ -5,6 +5,7 @@ GO
 BEGIN TRANSACTION;
 
 
+Drop Table Teams
 Drop Table Prospects
 
 
@@ -120,102 +121,106 @@ Values ('Keldon Johnson', 19, 'Kentucky', 4, 'SF', '6''6"', 216, 13.5, 1.6, 5.9,
 Insert Prospects (ProspectName, Age, School, Rating, Position, Height, [Weight], Points, Assists, Rebounds, Blocks, Steals)
 Values ('Kevin Porter Jr.', 19, 'USC', 6, 'SG', '6''5"', 213, 9.5, 1.4, 4.0, 0.5, 0.8);
 
+
+
 CREATE TABLE Teams
 (
 
 	TeamName varchar(50) not null,
 	TeamNeeds varchar(50) not null,
+	TeamPicture varchar(50) not null,
+
 );
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('New Orleans Pelicans', 'PG, shooting, SF')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('New Orleans Pelicans', 'PG, shooting, SF', 'pelicansLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Memphis Grizzles', 'PG, SG, stretch-4')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Memphis Grizzles', 'PG, SG, stretch-4', 'grizzliesLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('New York Knicks', 'Everything besides a starting C')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('New York Knicks', 'Everything besides a starting C', 'knicksLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Los Angeles Lakers', 'PG, shooting, wing defense')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Los Angeles Lakers', 'PG, shooting, wing defense', 'lakersLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Cleveland Cavaliers', 'Combo guard, 3-and-D wing')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Cleveland Cavaliers', 'Combo guard, 3-and-D wing', 'cavsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Phenoix Suns', 'PG, NBA-caliber bench')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Phenoix Suns', 'PG, NBA-caliber bench', 'sunsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Chichago Bulls', 'PG')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Chichago Bulls', 'PG', 'bullsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Atlanta Hawks', 'Rim-protecting C, depth')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Atlanta Hawks', 'Rim-protecting C, depth', 'hawksLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Washington Wizards', 'Versatile forwards')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Washington Wizards', 'Versatile forwards', 'wizardsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Dallas Mavericks', 'PG, shooters, C')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Dallas Mavericks', 'PG, shooters, C', 'mavsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Minnesota TimberWolves', 'PG, depth at SF/PF')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Minnesota TimberWolves', 'PG, depth at SF/PF', 'timberwolvesLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Charlotte Hornets', 'PG')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Charlotte Hornets', 'PG', 'hornetsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Miami Heat', 'Improved role players')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Miami Heat', 'Improved role players', 'heatLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Sacromento Kings', 'Starting C, bench wings')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Sacromento Kings', 'Starting C, bench wings', 'kingsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Boston Celtics', 'G/F/C in case FAs leave')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Boston Celtics', 'G/F/C in case FAs leave', 'celticsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Detroit Pistons', 'Versatile wings, depth at SF/C')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Detroit Pistons', 'Versatile wings, depth at SF/C', 'pistonsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Orlando Magic', 'Depth at wing spots')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Orlando Magic', 'Depth at wing spots', 'magicLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Brooklyn Nets', 'PG, stretch-4, backup C')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Brooklyn Nets', 'PG, stretch-4, backup C', 'netsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Indiana Pacers', 'PG, SF, secondary scorer')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Indiana Pacers', 'PG, SF, secondary scorer', 'pacersLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('San Antonio Spurs', 'Big wings')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('San Antonio Spurs', 'Big wings', 'spursLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Los Angeles Clippers', 'SF, depth at PF/C')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Los Angeles Clippers', 'SF, depth at PF/C', 'clippersLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Oklahoma Thunder', 'Stretch-4, shooting')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Oklahoma Thunder', 'Stretch-4, shooting', 'thunderLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Utah Jazz', 'Bench shooters')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Utah Jazz', 'Bench shooters', 'jazzLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Philadelphia 76ers', 'Bench depth')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Philadelphia 76ers', 'Bench depth', 'sixersLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Portland Trailblazers', 'Bench guards and C')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Portland Trailblazers', 'Bench guards and C', 'blazersLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Houston Rockets', 'Backup PG, bench scoring')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Houston Rockets', 'Backup PG, bench scoring', 'rocketsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Denver Nuggets', 'Stretch-4, big wing')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Denver Nuggets', 'Stretch-4, big wing', 'nuggetsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Golden State Warriors', 'SG, SF, bench depth')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Golden State Warriors', 'SG, SF, bench depth', 'warriorsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Toronto Raptors', 'SF, wing depth')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Toronto Raptors', 'SF, wing depth', 'raptorsLogo')
 
-Insert Teams (TeamName, TeamNeeds)
-Values ('Milliwakue Bucks', 'Backup PG')
+Insert Teams (TeamName, TeamNeeds, TeamPicture)
+Values ('Milliwakue Bucks', 'Backup PG', 'bucksLogo')
 
 
 

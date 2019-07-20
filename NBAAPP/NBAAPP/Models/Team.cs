@@ -9,5 +9,6 @@ namespace NBAAPP.Models
     {
         public string TeamName { get; set; }
         public string TeamNeeds { get; set; }
+        public string TeamPicture { get; set; }
     }
 }

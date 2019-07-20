@@ -47,10 +47,7 @@ C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\ne
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\NBAAPP.TagHelpers.input.cache
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\NBAAPP.TagHelpers.output.cache
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\NBAAPP.RazorCoreGenerate.cache
-C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
-C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\ViewBoard.g.cshtml.cs
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -65,3 +62,4 @@ C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\ne
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\NBAAPP.pdb
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\NBAAPP.csproj.CopyComplete
 C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\ShowDraftOrder.g.cshtml.cs
+C:\Users\MSpring\Desktop\NBAappMVC\NBAMockDraftApp2.0\NBAAPP\NBAAPP\obj\Debug\netcoreapp2.1\Razor\Views\Home\MockDraft.g.cshtml.cs

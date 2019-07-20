@@ -38,12 +38,17 @@ namespace NBAAPP.Controllers
         }
 
 
-        public IActionResult StartMockDraft()
+        // Come back to this when you decide how you wanna handle the draft process.. think of something creative!
+        [HttpGet]
+        public IActionResult MockDraft()
         {
             return View();
         }
 
-        public IActionResult DraftResults()
+
+        // Change this later once you figure out the get!
+        [HttpPost]
+        public IActionResult MockDraft(string f)
         {
             return View();
         }

@@ -2,19 +2,34 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-<div class="container">
-    <div>
-        <a asp-action="ViewBoard" asp-controller="Home"><img class="grid-item1" src="~/images/Prospects2.jpg" style="height:25%" /></a>
-    </div>
-    <div>
-        <a asp-action="ShowDraftOrder" asp-controller="Home"><img class="grid-item2" src="~/images/DraftLottery.jpg" style="height:25%" /></a>
-    </div>
 
-    <div>
-        <a asp-action="StartMockDraft" asp-controller="Home"><img class="grid-item3" src="~/images/2019draft.jpg" style="height:25%" /></a>
-    </div>
-
-    <div>
-        <a  asp-action="DraftResults" asp-controller="Home"><img class="grid-item4" src="~/images/DraftStagePic.jpg" style="height:25%" /></a>
-    </div>
+<div class="HomePageTitle">
+    <h1><b>Welcome to My Mock Draft App!</b></h1>
 </div>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th class="ViewBoard">View Board</th>
+            <th>Lottery Results</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a asp-controller="Home" asp-action="ViewBoard"><img src="~/images/Prospects2.jpg" style="height: 350px; width: 500px;" /></a></td>
+            <td><a asp-controller="Home" asp-action="ShowDraftOrder"><img src="~/images/LotteryResults.jpg" style="height: 350px; width: 500px;" /></a></td>
+        </tr>
+    </tbody>
+</table>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Start Your Mock Draft</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a asp-controller="Home" asp-action="MockDraft"><img src="~/images/DraftStagePic.jpg" style="height: 350px; width: 500px;" /></a></td>
+        </tr>
+    </tbody>
+</table>

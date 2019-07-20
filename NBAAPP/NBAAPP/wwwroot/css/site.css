@@ -36,36 +36,11 @@ body {
     }
 }
 
-
-div.container {
-    display: grid;
-    grid-template-columns: 25px 1fr 1fr 25px;
-    grid-template-areas: ". pic1 pic2 ."
-                         ". pic3 pic4 .";
-    grid-gap: 15px;
+div.HomePageTitle {
+    text-align: center;
 }
 
-.grid-item1 {
-    /*grid-area: pic1;*/
-    height: 250px;
-    width: 450px;
+img.TeamLogo {
+    height: 60px;
+    width: 80px;
 }
-
-.grid-item2 {
-    /*grid-area: pic2;*/
-    height: 250px;
-    width: 450px;
-}
-
-.grid-item3 {
-    /*grid-area: pic3;*/
-    height: 250px;
-    width: 450px;
-}
-
-.grid-item4 {
-    /*grid-area: pic4;*/
-    height: 250px;
-    width: 450px;
-}
-

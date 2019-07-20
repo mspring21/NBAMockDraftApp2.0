@@ -35,6 +35,7 @@ namespace NBAAPP.DAL
                         Team team = new Team();
                         team.TeamName = Convert.ToString(reader["teamname"]);
                         team.TeamNeeds = Convert.ToString(reader["teamneeds"]);
+                        team.TeamPicture = Convert.ToString(reader["TeamPicture"]);
                         list.Add(team);
                     }
 
