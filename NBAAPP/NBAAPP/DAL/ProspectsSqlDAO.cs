@@ -17,7 +17,7 @@ namespace NBAAPP.DAL
         }
 
 
-        public List<Prospect> GetProspect()
+        public List<Prospect> GetAllProspects()
         {
             List<Prospect> list = new List<Prospect>();
             try

@@ -1,56 +1,72 @@
-﻿@model Prospect
+﻿@model DraftVM
 @{
     ViewData["Title"] = "MockDraft";
 }
 
 <h2>MockDraft</h2>
 
+@foreach (Team team in Model.Teams)
+{
 
 
-<form method="post" asp-controller="Home" asp-action="MockDraft">
-    <table class="table table-striped">
-        <tbody>
-            <tr>
-                <td><label asp-for="ProspectName">Pick Your Player:</label></td>
-                <td>
-                    <select asp-for="ProspectName">
-                        <option value="Zion Williamson">Zion Williamson</option>
-                        <option value="Ja Morant">Ja Morant</option>
-                        <option value="R.J. Barrett">R.J. Barrett</option>
-                        <option value="De'Andre Hunter">De'Andre Hunter</option>
-                        <option value="Darius Garland">Darius Garland</option>
-                        <option value="Jarrett Culver">Jarrett Culver</option>
-                        <option value="Coby White">Coby White</option>
-                        <option value="Jaxson Hayes">Jaxson Hayes</option>
-                        <option value="Rui Hachimura">Rui Hachimura</option>
-                        <option value="Cam Reddish">Cam Reddish</option>
-                        <option value="Cameron Johnson">Cameron Johnson</option>
-                        <option value="P.J. Washington">P.J. Washington</option>
-                        <option value="Tyler Herro">Tyler Herro</option>
-                        <option value="Romeo Langford">Romeo Langford</option>
-                        <option value="Sekou Doumbouya">Sekou Doumbouya</option>
-                        <option value="Chuma Okeke">Chuma Okeke</option>
-                        <option value="Nickeil Alexander-Walker">Nickeil Alexander-Walker</option>
-                        <option value="Goga Bitadze">Goga Bitadze</option>
-                        <option value="Luka Samanic">Luka Samanic</option>
-                        <option value="Matisse Thybulle">Matisse Thybulle</option>
-                        <option value="Brandon Clarke">Brandon Clarke</option>
-                        <option value="Grant Williams">Grant Williams</option>
-                        <option value="Darius Bazley">Darius Bazley</option>
-                        <option value="Ty Jerome">Ty Jerome</option>
-                        <option value="Nassir Little">Nassir Little</option>
-                        <option value="Dylan Windler">Dylan Windler</option>
-                        <option value="Mfiondu Kabengele">Mfiondu Kabengele</option>
-                        <option value="Jordan Poole">Jordan Poole</option>
-                        <option value="Keldon Johnson">Keldon Johnson</option>
-                        <option value="Kevin Porter Jr.">Kevin Porter Jr.</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Add City" /></td>
-            </tr>
-        </tbody>
-    </table>
-</form>
+
+    <form method="post" asp-controller="Home" asp-action="MockDraft">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td>
+                        <p><b>The @team.TeamName are Officially on the clock....</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Team Needs: @team.TeamNeeds</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label @*asp-for="ProspectName*@">Pick Your Player:</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select @*asp-for="ProspectName" *@>
+                            <option value="Zion Williamson">Zion Williamson</option>
+                            <option value="Ja Morant">Ja Morant</option>
+                            <option value="R.J. Barrett">R.J. Barrett</option>
+                            <option value="De'Andre Hunter">De'Andre Hunter</option>
+                            <option value="Darius Garland">Darius Garland</option>
+                            <option value="Jarrett Culver">Jarrett Culver</option>
+                            <option value="Coby White">Coby White</option>
+                            <option value="Jaxson Hayes">Jaxson Hayes</option>
+                            <option value="Rui Hachimura">Rui Hachimura</option>
+                            <option value="Cam Reddish">Cam Reddish</option>
+                            <option value="Cameron Johnson">Cameron Johnson</option>
+                            <option value="P.J. Washington">P.J. Washington</option>
+                            <option value="Tyler Herro">Tyler Herro</option>
+                            <option value="Romeo Langford">Romeo Langford</option>
+                            <option value="Sekou Doumbouya">Sekou Doumbouya</option>
+                            <option value="Chuma Okeke">Chuma Okeke</option>
+                            <option value="Nickeil Alexander-Walker">Nickeil Alexander-Walker</option>
+                            <option value="Goga Bitadze">Goga Bitadze</option>
+                            <option value="Luka Samanic">Luka Samanic</option>
+                            <option value="Matisse Thybulle">Matisse Thybulle</option>
+                            <option value="Brandon Clarke">Brandon Clarke</option>
+                            <option value="Grant Williams">Grant Williams</option>
+                            <option value="Darius Bazley">Darius Bazley</option>
+                            <option value="Ty Jerome">Ty Jerome</option>
+                            <option value="Nassir Little">Nassir Little</option>
+                            <option value="Dylan Windler">Dylan Windler</option>
+                            <option value="Mfiondu Kabengele">Mfiondu Kabengele</option>
+                            <option value="Jordan Poole">Jordan Poole</option>
+                            <option value="Keldon Johnson">Keldon Johnson</option>
+                            <option value="Kevin Porter Jr.">Kevin Porter Jr.</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Lock in Pick" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+}

@@ -8,6 +8,6 @@ namespace NBAAPP.DAL
 {
     public interface IProspectsDAO
     {
-        List<Prospect> GetProspect();
+        List<Prospect> GetAllProspects();
     }
 }

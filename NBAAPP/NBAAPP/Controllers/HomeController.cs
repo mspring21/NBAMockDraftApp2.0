@@ -26,7 +26,7 @@ namespace NBAAPP.Controllers
 
         public IActionResult ViewBoard()
         {
-            IList<Prospect> prospect = prospectDAO.GetProspect();
+            IList<Prospect> prospect = prospectDAO.GetAllProspects();
             return View(prospect);
         }
 
@@ -42,7 +42,10 @@ namespace NBAAPP.Controllers
         [HttpGet]
         public IActionResult MockDraft()
         {
-            return View();
+            DraftVM vm = new DraftVM();
+            vm.Prospects = prospectDAO.GetAllProspects();
+            vm.Teams = teamDAO.GetDraftOrder();
+            return View(vm);
         }
 
 
