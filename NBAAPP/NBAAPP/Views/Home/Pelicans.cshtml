@@ -1,0 +1,46 @@
+﻿@model DraftVM
+@{
+    ViewData["Title"] = "Pelicans";
+}
+<br />
+<br />
+<img class="DraftBanner" src="~/images/2019draft.jpg" />
+<br />
+<h1 style="text-align:center">The Pelicans Are on the Clock!!</h1>
+<br />
+<h2 style="text-align:center">With the First Pick in the NBA Draft the New Orleans Pelicans Select....</h2>
+<br />
+<div style="text-align: center;">
+    <span><img class="TeamLogo" src="~/images/@(Model.TeamOnTheBoard.TeamPicture).png" /> <b>Team Needs:</b> @Model.TeamOnTheBoard.TeamNeeds</span>
+</div>
+<br />
+<br />
+<br />
+<div class="all">
+    <div class="container">
+        <h4 style="text-align: center"><b>Top Four Players Still Available</b></h4>
+        <div class="row">
+            @foreach (Prospect prospect in Model.TopFiveProspectsAvailable)
+            {
+                <div class="col-sm-3" style="padding-left: 50px">
+                    <div class="card">
+                        <div class="playerCardBanner">
+                            <div class="playerAvatar" style="background-image: url(@prospect.ProfilePhoto)"></div>
+                        </div>
+                        <h3 class="PlayerName">@prospect.ProspectName</h3>
+                        <a class="playerInfo"> Age: @prospect.Age</a>
+                        <a class="playerInfo"> Height: @prospect.Height</a>
+                        <a class="playerInfo"> Weight: @prospect.Weight</a>
+                        <a class="playerInfo"> Rating: @prospect.Rating</a>
+
+                        <button>Details</button>
+                        <form>
+                            <button asp-action="BreakDownPickOne" asp-controller="Home" asp-route-id="@prospect.Id">Draft Player!</button>
+                        </form>
+                    </div>
+                    <br />
+                </div>
+            }
+        </div>
+    </div>
+</div>

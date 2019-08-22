@@ -36,6 +36,17 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+/*MY BAD STYLE STARTS HERE*/
+
+
 div.HomePageTitle {
     text-align: center;
 }
@@ -43,4 +54,72 @@ div.HomePageTitle {
 img.TeamLogo {
     height: 60px;
     width: 80px;
+}
+
+.DraftBanner {
+    height: 150px;
+    width: 100%;
+}
+
+.card {
+    width: 200px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+}
+
+.playerCardBanner {
+    height: 100px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid black;
+}
+
+.playerAvatar {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: #F1F1F1;
+    border-radius: 100%;
+}
+
+.PlayerName {
+    margin-top: 45px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #212121;
+}
+
+.playerInfo {
+    display: block;
+    padding: 5px 15px;
+    font-size: 14px;
+    color: #9E9E9E;
+    text-decoration: none;
+}
+
+.all {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 10%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.PlayerProfileBreakDown {
+    max-height: 300px;
+    max-width: 600px;
 }

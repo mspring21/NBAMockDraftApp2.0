@@ -7,6 +7,7 @@ namespace NBAAPP.Models
 {
     public class Prospect
     {
+        public int Id { get; set; }
         public string ProspectName { get; set; }
         public int Age { get; set; }
         public string School { get; set; }
@@ -19,5 +20,8 @@ namespace NBAAPP.Models
         public decimal Rebounds { get; set; }
         public decimal Blocks { get; set; }
         public decimal Steals { get; set; }
+        public string ProfilePhoto { get; set; }
+        public int DraftedStatus { get; set; }
+        public string TeamDrafted { get; set; }
     }
 }

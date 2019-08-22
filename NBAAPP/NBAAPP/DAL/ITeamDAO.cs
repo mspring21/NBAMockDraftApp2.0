@@ -9,5 +9,7 @@ namespace NBAAPP.DAL
     public interface ITeamDAO
     {
         List<Team> GetDraftOrder();
+
+        Team GetSingleTeamWithId(int id);
     }
 }
