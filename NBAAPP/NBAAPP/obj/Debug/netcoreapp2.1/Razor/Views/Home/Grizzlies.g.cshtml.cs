@@ -67,7 +67,7 @@ using NBAAPP.Models;
             WriteLiteral("<br />\r\n<br />\r\n");
             EndContext();
             BeginContext(77, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1915e14a684a46028fd1deda937cc192", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8ecc0274aa93436480f941ba58e7bcad", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -86,7 +86,7 @@ using NBAAPP.Models;
             WriteLiteral("\r\n<br />\r\n<h1 style=\"text-align:center\">The Grizzlies Are on the Clock!!</h1>\r\n<br />\r\n<h2 style=\"text-align:center\">With the Second Pick in the NBA Draft the Memphis Grizzlies Select....</h2>\r\n<br />\r\n<div style=\"text-align: center;\">\r\n    <span>");
             EndContext();
             BeginContext(380, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "1df42045de48425bb32fb5d042259c8b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "70cb6c76662940fdb974c5673f7c3cb7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -195,12 +195,12 @@ WriteAttributeValue("", 1049, prospect.ProfilePhoto, 1049, 22, false);
             WriteLiteral("</a>\r\n\r\n                        <button>Details</button>\r\n                        ");
             EndContext();
             BeginContext(1568, 179, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6e63d18ab1c449c83aec6aac6834b8e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c9cfdaf59ce4b4d8fb91d41eb0e3fa4", async() => {
                 BeginContext(1574, 30, true);
                 WriteLiteral("\r\n                            ");
                 EndContext();
                 BeginContext(1604, 110, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4262397fad74ba2882b3295b7df4527", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c6db500849f469e93bfa1ee10daecd8", async() => {
                     BeginContext(1692, 13, true);
                     WriteLiteral("Draft Player!");
                     EndContext();

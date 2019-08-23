@@ -66,7 +66,7 @@ using NBAAPP.Models;
             WriteLiteral("</br>\r\n");
             EndContext();
             BeginContext(75, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ce189bda6460496ea1d6b299af3be774", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ae0e231456184e88897d0c016cd07d9e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -221,12 +221,12 @@ WriteAttributeValue("", 593, Model.Prospect.ProfilePhoto, 593, 28, false);
             WriteLiteral("</p>\r\n\r\n</div>\r\n\r\n");
             EndContext();
             BeginContext(1150, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a002441c1164d2ab41a1172546b922e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6c3194c720b43b3b439bab73686a825", async() => {
                 BeginContext(1156, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(1162, 74, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76e3bb4ad883418bacdfaa70093094a2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce9ea478d39b4f2c8a6ea2f6f0e3fc71", async() => {
                     BeginContext(1212, 15, true);
                     WriteLiteral("Continue Draft!");
                     EndContext();

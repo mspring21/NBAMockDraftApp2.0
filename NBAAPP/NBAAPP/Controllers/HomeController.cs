@@ -91,7 +91,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -105,7 +105,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(3);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -117,12 +117,12 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(3);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
 
-        //THIS IS WHERE I LEFT OFF!
+
         //Lakers
         [HttpGet]
         public IActionResult Lakers()
@@ -130,7 +130,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(4);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -142,7 +142,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(4);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -154,7 +154,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(5);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -166,7 +166,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(5);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -178,7 +178,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(6);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -190,7 +190,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(6);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -202,7 +202,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(7);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -214,7 +214,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(7);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -226,7 +226,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(8);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -238,7 +238,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(8);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -250,7 +250,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(9);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -262,7 +262,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(9);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -274,7 +274,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(10);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -286,7 +286,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(10);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -298,7 +298,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(11);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -310,7 +310,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(11);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -322,7 +322,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(12);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -334,7 +334,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(12);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -346,7 +346,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(13);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -358,7 +358,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(13);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -370,7 +370,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(14);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -382,11 +382,12 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(14);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
 
+        // This is where you left off!
         //Celtics
         [HttpGet]
         public IActionResult Celtics()
@@ -394,7 +395,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(15);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -406,7 +407,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(15);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -418,7 +419,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(16);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -430,7 +431,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(16);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -442,7 +443,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(17);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -454,7 +455,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(17);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -466,7 +467,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(18);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -478,7 +479,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(18);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -490,7 +491,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(19);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -502,7 +503,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(19);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -514,7 +515,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(20);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -526,7 +527,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(20);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -538,7 +539,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(21);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -550,7 +551,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(21);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -562,7 +563,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(22);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -574,7 +575,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(22);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -586,7 +587,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(23);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -598,7 +599,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(23);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -610,7 +611,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(24);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -622,7 +623,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(24);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -634,7 +635,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(25);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -646,7 +647,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(25);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -658,7 +659,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(26);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -670,7 +671,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(26);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -682,7 +683,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(27);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -694,7 +695,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(27);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -706,7 +707,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(28);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -718,7 +719,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(28);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -730,7 +731,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(29);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -742,7 +743,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(29);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }
@@ -754,7 +755,7 @@ namespace NBAAPP.Controllers
             DraftVM vm = new DraftVM();
             vm.Prospects = prospectDAO.GetAllProspects();
             vm.Teams = teamDAO.GetDraftOrder();
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(2);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(30);
             vm.TopFiveProspectsAvailable = prospectDAO.GetTopFourProspectsAvailableForDraft(1);
             vm.AvailableProspects = prospectDAO.GetAllProspectsAvailableForDraft(1);
             vm.DraftedProspects = prospectDAO.GetAllDraftedProspects(2);
@@ -766,7 +767,7 @@ namespace NBAAPP.Controllers
         {
             DraftVM vm = new DraftVM();
             vm.Prospect = prospectDAO.GetProspectById(id);
-            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(1);
+            vm.TeamOnTheBoard = teamDAO.GetSingleTeamWithId(30);
             prospectDAO.UpdateStatusOfDraftedPlayer(id, vm.TeamOnTheBoard.TeamName);
             return View(vm);
         }

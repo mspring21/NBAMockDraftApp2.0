@@ -1,0 +1,36 @@
+﻿@model DraftVM
+@{
+    ViewData["Title"] = "BreakDownPickTwo";
+}
+</br>
+<img class="DraftBanner" src="~/images/banner-draft.jpg" />
+
+<h1 style="text-align: center">With the Fourteenth Pick in the NBA Draft the Sacramento Kings Selected...</h1>
+
+<h3 style="text-align: center">*****@Model.Prospect.ProspectName*****</h3>
+
+<div style="text-align: center">
+    <p>What a Great Pick for this team! Lets break down this players stats from his final season before declaring for the draft.</p>
+    </br>
+    <div style="text-align: center">
+        <img class="PlayerProfileBreakDown" src="@Model.Prospect.ProfilePhoto" />
+    </div>
+    </br>
+    <p><b>@Model.Prospect.ProspectName</b></p>
+    <p>School: @Model.Prospect.School</p>
+    <p>Position: @Model.Prospect.Position</p>
+    <p>Rating: @Model.Prospect.Rating</p>
+    <p>Height: @Model.Prospect.Height</p>
+    <p>Weight: @Model.Prospect.Weight</p>
+    <p>Points: @Model.Prospect.Points</p>
+    <p>Rebounds: @Model.Prospect.Rebounds</p>
+    <p>Assists: @Model.Prospect.Assists</p>
+    <p>Steals: @Model.Prospect.Steals</p>
+    <p>Blocks: @Model.Prospect.Blocks</p>
+
+</div>
+
+<form>
+    <button asp-action="Celtics" asp-controller="Home">Continue Draft!</button>
+</form>
+
